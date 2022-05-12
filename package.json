@@ -4,7 +4,8 @@
   "description": "SG-1 Finance smart contracts",
   "main": "index.js",
   "scripts": {
-    "test": "npx hardhat test"
+    "test": "npx hardhat test",
+    "oracle:update": "npx hardhat run scripts/update-oracle.js --network testnet"
   },
   "repository": {
     "type": "git",
