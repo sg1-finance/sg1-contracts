@@ -1,0 +1,20 @@
+name: Oracle
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - run: npm install
+      - name: Oracle Update
+        run: npm run oracle:update
+        env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
