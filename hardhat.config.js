@@ -26,7 +26,7 @@ module.exports = {
         blockNumber: 9014000
       },
       accounts: {
-        accountsBalance: INITIAL_BALANCE.toString()
+        accountsBalance: "1000000000000000000000000"
       }
     },
     testnet: {
