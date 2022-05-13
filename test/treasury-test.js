@@ -14,7 +14,7 @@ describe("Treasury", function () {
     expect(treasury.address).to.exist;
   });
 
-  xit("should allocate seigniorage", async function () {
+  it("should allocate seigniorage", async function () {
     await treasury.allocateSeigniorage();
     // TODO: If nothing is staked, this reverts with 'Masonry: Cannot allocate when totalSupply is 0'
   });

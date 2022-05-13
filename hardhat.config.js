@@ -23,7 +23,7 @@ module.exports = {
 
         // Fantom testnet:
         url: "https://xapi.testnet.fantom.network/lachesis/",
-        blockNumber: 8996000
+        blockNumber: 9014000
       },
       accounts: {
         accountsBalance: INITIAL_BALANCE.toString()
